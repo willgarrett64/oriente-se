@@ -151,19 +151,8 @@ header a {
     color: black;
 }
 
-header .languages {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.language {
-    display: flex;
-}
-
-.language img {
-    height: 1rem;
-    width: 1rem;
+header a:hover {
+    text-decoration: underline;
 }
 
 
@@ -219,12 +208,6 @@ header .languages {
     margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 1550px) {
-    .flex-services {
-        max-width: 800px;
-    }
-}
-
 .service {
     margin: 15px;
     height: 350px;
@@ -236,7 +219,6 @@ header .languages {
 .service .image {
     height: 80%;
     max-width: 350px;
-
 }
 
 .image img {
@@ -293,6 +275,47 @@ header .languages {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+@media only screen and (max-width: 1550px) {
+    .flex-services {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .flex-services {
+        flex-direction: column;
+        align-content: space-around;
+        justify-items: center;
+        width: 80%;
+    }
+
+    .service {
+        margin: 15px;
+        height: 550px;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .service .image {
+        height: 80%;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .image img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .overlay-text {
+        font-size: 2.2rem;
+    }
 }
 
 
