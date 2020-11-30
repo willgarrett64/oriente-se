@@ -307,6 +307,10 @@ header a:hover {
         max-width: none;
     }
     
+    .service .text {
+        font-size: 2rem;
+    }
+
     .image img {
         object-fit: cover;
         height: 100%;
@@ -342,7 +346,6 @@ header a:hover {
     position: relative;
     z-index: 2;
     font-weight: bold;
-    
 }
 
 .mission p {
@@ -359,7 +362,6 @@ header a:hover {
     height: fit-content;
     position: relative;
     z-index: 2;
-    background-color: white;
 }
 
 .flex-team {
@@ -371,27 +373,88 @@ header a:hover {
 }
 
 .member {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
     margin: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: Oswald, sans-serif;
 }
 
 .member img {
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
-    
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.member .name {
+    font-size: 1.6rem;
+}
+
+.member .role {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .flex-team {
+        flex-direction: column;
+    }
+
+    .member img {
+        height: 550px;
+        width: 550px;
+    }
+
+    .member .name {
+        font-size: 2.2rem;
+    }
+
+    .member .role {
+        font-size: 1.8rem;
+    }
+
+    .founder {
+        order: 1;
+    }
+
+    .acupuncturist {
+        order: 2;
+    }
+
+    .receptionist {
+        order: 3;
+    }
 }
 
 /* Contact */
 .contact {
-    height: 200px;
     position: relative;
     z-index: 2;
     background-color: white;
 }
 
+.flex-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+}
+
+.contact-details {
+}
+
+.mapouter {
+    height: 200px;
+}
+
 /* Footer */
+footer {
+    background-color: rgb(253, 171, 19);
+    padding: 5px;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+}
