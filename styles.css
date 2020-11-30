@@ -435,20 +435,32 @@ header a:hover {
     position: relative;
     z-index: 2;
     background-color: white;
+    text-align: center;
 }
 
 .flex-contact {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 15px;
 }
 
-.contact-details {
+.contact form {
+    width: 600px;
+    height: 500px;
+    padding: 10px;
+}
+
+.contact input {
+    margin: 10px;
+}
+
+.contact input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 15px;
 }
 
 .mapouter {
-    height: 200px;
+    
 }
 
 /* Footer */
