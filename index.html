@@ -31,7 +31,7 @@
       <section id="services" class="container services">
         <h2 class="section-header">Serviços</h2>
         <div class="flex-services">
-          <div class="service">
+          <div class="raised service">
             <div class="image">
               <img src="./images/services/acupuntura.jfif" alt="acupuntura terapia">
               <div class="overlay">
@@ -40,7 +40,7 @@
             </div>
             <div class="text"><h2>Acupuntura</h2></div>
           </div>
-          <div class="service">
+          <div class="raised service">
             <div class="image">
               <img src="./images/services/shiatsu.jpg" alt="shiatsu massagaem terapia">
               <div class="overlay">
@@ -49,7 +49,7 @@
             </div>
             <div class="text"><h2>Shiatsu</h2></div>
           </div>
-          <div class="service">
+          <div class="raised service">
             <div class="image">
               <img src="./images/services/moxa.jpg" alt="moxabustao terapia">
               <div class="overlay">
@@ -58,7 +58,7 @@
             </div>
             <div class="text"><h2>Moxabustão</h2></div>
           </div>
-          <div class="service">
+          <div class="raised service">
             <div class="image">
               <img src="./images/services/ventosa.jfif" alt="ventosa terapia">
               <div class="overlay">
@@ -70,33 +70,34 @@
         </div>
       </section>
 
-      <section class="scroll">
-        
-      
-      </section>
 
       <section id="mission" class="container mission">
         <h2 class="section-header">Missão</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="raised">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
+      
+      <section class="scroll">
+      </section>
+
+      
 
       <section id="team" class="container team">
         <h2 class="section-header">Equipe</h2>
         <div class="flex-team">
           <div class="member acupuncturist">
-            <img src="./images/team/woman-2.jfif" alt="">
+            <img class="raised" src="./images/team/woman-2.jfif" alt="">
             <h3 class="name">Gabriella Vargas</h3>
             <h4 class="role">Acupunturista</h4>
             <h4 class="role"></h4>
           </div>
           <div class="member founder">
-            <img src="./images/team/woman-1.jfif" alt="">
+            <img class="raised" src="./images/team/woman-1.jfif" alt="">
             <h3 class="name">Dra. Elaine Borges</h3>
             <h4 class="role">Fundadora</h4>
             <h4 class="role">Sénior Terapeuta</h4>
           </div>
           <div class="member receptionist">
-            <img src="./images/team/man-1.jfif" alt="">
+            <img class="raised" src="./images/team/man-1.jfif" alt="">
             <h3 class="name">Fábio Teixeira</h3>
             <h4 class="role">Recepcionista</h4>
             <h4 class="role"></h4>
@@ -107,12 +108,13 @@
       <section id="contact" class="container contact">
         <h2 class="section-header">Contato</h2>
         <div class="flex-contact">
-          <form class="container" action="POST">
+          <form class="raised" action="POST">
+            <h3>Marque uma consulta</h3>
             <label for="name-input">Nome: </label>
             <input type="text" id="name-input">
             <br>
             <label for="phone-input">Tel: </label>
-            <input type="number" id="phone-input">
+            <input type="tel" id="phone-input">
             <br>
             <label for="email-input">Email: </label>
             <input type="email" id="email-input">
@@ -131,21 +133,24 @@
             <label for="input-extra">Informações adicionais: </label>
             <br>
             <textarea name="input-extra" id="input-extra" cols="40" rows="10" placeholder="Motivo da procura de um tratamento"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
           </form>
           
-          <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=edificio%20dona%20liu%2C%20avenida%20rio%20branco%2C%20juiz%20de%20fora&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/172/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+          <div class="raised mapouter"><div class="gmap_canvas"><iframe width="450" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=edificio%20dona%20liu%20avenida%20rio%20branco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/128/"></a></div></div>
         </div>
-        <div class="contact-details">
-          <p>tel: +55 (32) 99876-5432</p>
-          <p>email: oriente-se@acupuntura.com.br</p>
-          <p>endereço: Sala 907, Edif Dona Liu - Av. Barão do Rio Branco, 2588 - Centro, Juiz de Fora - MG, 36016-311, Brazil</p>
-        </div>
+        
 
       </section>
 
 
 
       <footer>
+        <div class="contact-details">
+          <p>+55 (32) 99876-5432</p>
+          <p>oriente-se@acupuntura.com.br</p>
+          <p>Sala 907, Edif Dona Liu, Av. Barão do Rio Branco, 2588 - Centro, Juiz de Fora - MG, 36016-311, Brazil</p>
+        </div>
         <p>&#169 Oriente-Se Acupuntura</p>
       </footer>
     </main>
